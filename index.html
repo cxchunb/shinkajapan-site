@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>株式会社鑫華 | オリジナルアイロンプリント（熱転写）制作</title>
+<meta name="description" content="大阪府泉南市の株式会社鑫華。Tシャツ・キャップ・バッグなどに、お客様のオリジナルデザインをプリントするアイロンプリント（熱転写）のオーダー制作を行っています。1点からご注文いただけます。">
+<style>
+:root{--ink:#26302d;--sub:#66706c;--paper:#faf7f2;--cream:#f1ebdd;--card:#fff;--green:#1f5d50;--green-d:#14403a;--gold:#c9962b;--line:#e4ddcd}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;color:var(--ink);background:var(--paper);line-height:1.9}
+.tag,nav,.btn,th,.step b,.num,.eyebrow,.ghost,footer,.access small,.pstep b{font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",Meiryo,sans-serif}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+
+header{position:sticky;top:0;z-index:10;background:rgba(250,247,242,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(4px)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:66px}
+.logo{text-decoration:none;font-weight:700;font-size:19px;color:var(--green);letter-spacing:.1em;display:flex;align-items:center;gap:10px}
+.logo i{display:inline-block;width:10px;height:10px;background:var(--gold);transform:rotate(45deg)}
+nav a{margin-left:22px;font-size:13px;text-decoration:none;color:var(--sub);transition:color .2s}
+nav a:hover{color:var(--green)}
+nav a.cta{color:#fff;background:var(--green);padding:7px 16px;border-radius:3px}
+nav a.cta:hover{background:var(--green-d);color:#fff}
+
+.hero{position:relative;padding:84px 0 78px;border-bottom:1px solid var(--line);overflow:hidden;
+ background:radial-gradient(circle at 85% 20%,#efe6d2 0,rgba(239,230,210,0) 45%),var(--paper)}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(31,93,80,.09) 1.2px,transparent 1.3px);background-size:26px 26px;pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+.tag{display:inline-block;font-size:12px;letter-spacing:.2em;color:var(--gold);border-bottom:1px solid var(--gold);padding-bottom:3px}
+.hero h1{font-size:40px;line-height:1.55;margin:20px 0 20px;color:var(--green-d);font-weight:700}
+.hero p{color:var(--sub);max-width:32em}
+.btn{display:inline-block;margin-top:30px;padding:14px 32px;background:var(--green);color:#fff;text-decoration:none;font-size:15px;font-weight:700;border-radius:3px;box-shadow:0 6px 16px rgba(31,93,80,.22);transition:transform .2s,background .2s}
+.btn:hover{background:var(--green-d);transform:translateY(-2px)}
+.hero svg{width:100%;max-width:420px;justify-self:center;display:block}
+
+section{padding:80px 0}
+section.alt{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.eyebrow{display:block;font-size:12px;letter-spacing:.24em;color:var(--gold)}
+h2{font-size:28px;color:var(--green-d);margin:6px 0 12px;position:relative;padding-bottom:16px}
+h2::after{content:"";position:absolute;left:0;bottom:0;width:44px;height:2px;background:var(--gold)}
+.lead{color:var(--sub);max-width:42em;margin:12px 0 38px}
+.center{text-align:center}
+.center h2::after{left:50%;margin-left:-22px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.two p+p{margin-top:14px}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:var(--card);border:1px solid var(--line);padding:34px 24px 30px;text-align:center;position:relative;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 28px rgba(20,64,58,.1)}
+.card::before{content:"";position:absolute;left:0;top:0;width:100%;height:3px;background:linear-gradient(90deg,var(--green),var(--gold))}
+.card svg{width:110px;height:110px;margin-bottom:12px}
+.card h3{font-size:19px;color:var(--green-d);margin-bottom:6px}
+.card p{font-size:14px;color:var(--sub);line-height:1.8}
+
+.process{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:10px;align-items:center;margin-top:6px}
+.pstep{text-align:center;background:#fff;border:1px solid var(--line);padding:22px 14px}
+.pstep svg{width:96px;height:80px;margin-bottom:8px}
+.pstep b{display:block;font-size:15px;color:var(--green-d)}
+.pstep span{font-size:13px;color:var(--sub);display:block;line-height:1.7;margin-top:4px}
+.parrow{color:var(--gold);font-size:26px;text-align:center}
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.feat div{border-top:2px solid var(--gold);padding-top:14px}
+.feat h3{font-size:17px;color:var(--green-d);margin-bottom:6px}
+.feat p{font-size:14px;color:var(--sub);line-height:1.85}
+
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.step{background:#fff;border:1px solid var(--line);padding:22px 16px;position:relative}
+.step .num{font-size:12px;color:var(--gold);letter-spacing:.15em}
+.step b{display:block;font-size:16px;color:var(--green-d);margin:4px 0 6px}
+.step p{font-size:13px;color:var(--sub);line-height:1.75}
+.prep{margin-top:34px;background:var(--cream);border:1px solid var(--line);padding:26px 30px}
+.prep h3{font-size:17px;color:var(--green-d);margin-bottom:10px}
+.prep ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:6px 30px;font-size:15px}
+.prep li::before{content:"◆ ";color:var(--gold);font-size:10px;vertical-align:2px}
+
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line)}
+th,td{text-align:left;padding:16px 22px;border-bottom:1px solid var(--line);font-size:15px;vertical-align:top}
+th{width:26%;background:#fbf9f4;color:var(--green-d);font-weight:600}
+tr:last-child th,tr:last-child td{border-bottom:none}
+td a{color:var(--green)}
+.access{margin-top:26px;background:var(--cream);border:1px solid var(--line);padding:24px 28px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.access small{display:block;color:var(--gold);letter-spacing:.15em;font-size:12px}
+.access span{font-size:17px}
+.ghost{display:inline-block;padding:10px 22px;border:1px solid var(--green);color:var(--green);text-decoration:none;font-size:14px;border-radius:3px;transition:all .2s}
+.ghost:hover{background:var(--green);color:#fff}
+
+.contact{background:var(--green-d);color:#fff;text-align:center;position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.07) 1.2px,transparent 1.3px);background-size:26px 26px}
+.contact .wrap{position:relative}
+.contact h2{color:#fff}
+.contact h2::after{left:50%;margin-left:-22px}
+.contact .eyebrow{color:#e5c06a}
+.contact p{opacity:.92}
+.contact .mail{display:inline-block;margin:18px 0 8px;font-size:26px;color:#fff;text-decoration:none;border-bottom:2px solid var(--gold);font-family:"Hiragino Sans","Noto Sans JP",sans-serif;word-break:break-all}
+footer{background:#0e2b26;color:#b9c9c4;text-align:center;font-size:12px;padding:24px 0}
+
+@media(max-width:900px){.steps{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr}.parrow{transform:rotate(90deg);font-size:22px}}
+@media(max-width:720px){
+ nav a{display:none}
+ nav a.cta{display:inline-block;margin-left:0;font-size:13px}
+ .hero{padding:48px 0}
+ .hero .wrap,.two{grid-template-columns:1fr}
+ .hero h1{font-size:28px}
+ .hero svg{max-width:300px}
+ section{padding:54px 0}
+ .cards,.feat{grid-template-columns:1fr}
+ .prep ul{grid-template-columns:1fr}
+ th,td{display:block;width:100%;padding:10px 16px}
+ th{border-bottom:none;padding-bottom:0;background:#fff}
+ .contact .mail{font-size:20px}
+}
+@media(max-width:420px){.steps{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap">
+  <a class="logo" href="#top"><i></i>株式会社鑫華</a>
+  <nav><a href="#about">私たちについて</a><a href="#items">対応アイテム</a><a href="#guide">ご注文について</a><a href="#flow">ご依頼の流れ</a><a href="#company">会社概要</a><a class="cta" href="#contact">お問い合わせ</a></nav>
+ </div>
+</header>
+
+<main id="top">
+<div class="hero">
+ <div class="wrap">
+  <div>
+   <span class="tag">HEAT TRANSFER PRINT</span>
+   <h1>あなたのデザインを、<br>身につけるかたちに。</h1>
+   <p>株式会社鑫華は、大阪府泉南市でアイロンプリント（熱転写）によるオリジナル製品の制作を行っています。Tシャツ、キャップ、バッグなどに、お客様のデザインをプリントします。1点からのご注文も承ります。</p>
+   <a class="btn" href="#contact">制作のご相談はこちら</a>
+  </div>
+  <svg viewBox="0 0 420 380" role="img" aria-label="Tシャツ、キャップ、バッグにプリントしたイメージ">
+   <circle cx="215" cy="188" r="170" fill="#efe6d2"/>
+   <circle cx="215" cy="188" r="170" fill="none" stroke="#c9962b" stroke-width="1" stroke-dasharray="3 7"/>
+   <!-- T-shirt -->
+   <g transform="translate(78 28) scale(.86)">
+    <path d="M130 52 L88 76 L40 132 L78 164 L108 132 L108 250 L272 250 L272 132 L302 164 L340 132 L292 76 L250 52 C232 78 148 78 130 52Z" fill="#1f5d50"/>
+    <path d="M130 52 C148 78 232 78 250 52" fill="none" stroke="#14403a" stroke-width="4"/>
+    <circle cx="190" cy="160" r="46" fill="#faf7f2"/>
+    <circle cx="190" cy="160" r="38" fill="none" stroke="#c9962b" stroke-width="2"/>
+    <path d="M190 130 L199 152 L223 154 L205 168 L211 190 L190 178 L169 190 L175 168 L157 154 L181 152Z" fill="#c9962b"/>
+   </g>
+   <!-- Cap -->
+   <g>
+    <path d="M40 318 C40 266 74 240 112 240 C150 240 172 268 174 300 L224 310 L224 322 L40 322Z" fill="#c9962b"/>
+    <path d="M112 240 C100 262 100 300 106 322" fill="none" stroke="#a97c1c" stroke-width="2"/>
+    <circle cx="112" cy="238" r="5" fill="#a97c1c"/>
+    <circle cx="84" cy="288" r="14" fill="#faf7f2"/>
+    <path d="M78 288 L90 288 M84 282 L84 294" stroke="#1f5d50" stroke-width="3" stroke-linecap="round"/>
+   </g>
+   <!-- Tote bag -->
+   <g>
+    <path d="M286 262 C286 230 330 230 330 262" fill="none" stroke="#14403a" stroke-width="5"/>
+    <rect x="262" y="258" width="92" height="94" rx="6" fill="#faf7f2" stroke="#14403a" stroke-width="3"/>
+    <path d="M278 316 C290 296 302 336 314 316 C326 296 338 336 346 316" fill="none" stroke="#1f5d50" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="308" cy="288" r="10" fill="#c9962b"/>
+   </g>
+  </svg>
+ </div>
+</div>
+
+<section id="about">
+ <div class="wrap">
+  <span class="eyebrow">ABOUT US</span>
+  <h2>私たちについて</h2>
+  <p class="lead">お客様のデザインを、丁寧にカタチにします。</p>
+  <div class="two">
+   <div>
+    <p>株式会社鑫華は、アイロンプリント（熱転写）によるオリジナル製品の制作を行う、大阪府泉南市の会社です。</p>
+    <p>Tシャツ、キャップ、バッグなどの製品に、お客様がお持ちの柄・ロゴ・文字などをプリントし、世界にひとつのアイテムに仕上げます。</p>
+   </div>
+   <div>
+    <p>個人のお客様、法人・団体のお客様、どなたからのご注文も承っております。現在は、Amazon・Yahoo!ショッピング・楽天市場などのネットショップを運営する個人セラー様からのご注文もお受けしています。</p>
+    <p>ご不明な点は、メールにてお気軽にご相談ください。</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="items" class="alt">
+ <div class="wrap">
+  <span class="eyebrow">ITEMS</span>
+  <h2>対応アイテム</h2>
+  <p class="lead">お客様のデザインを、次のようなアイテムにプリントします。</p>
+  <div class="cards">
+   <div class="card">
+    <svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="56" fill="#f1ebdd"/><path d="M42 24 L20 36 L10 56 L28 66 L38 54 L38 100 L82 100 L82 54 L92 66 L110 56 L100 36 L78 24 C72 34 48 34 42 24Z" fill="#1f5d50"/><circle cx="60" cy="68" r="14" fill="#faf7f2"/><path d="M60 58 L63 65 L71 66 L65 71 L67 79 L60 75 L53 79 L55 71 L49 66 L57 65Z" fill="#c9962b"/></svg>
+    <h3>Tシャツ</h3>
+    <p>オリジナルの柄・ロゴ・文字を<br>Tシャツにプリントします。</p>
+   </div>
+   <div class="card">
+    <svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="56" fill="#f1ebdd"/><path d="M20 74 C20 44 38 30 60 30 C82 30 94 46 94 70 L110 74 L110 82 L20 82Z" fill="#1f5d50"/><circle cx="60" cy="29" r="4" fill="#14403a"/><circle cx="56" cy="56" r="10" fill="#faf7f2"/><path d="M51 56 L61 56 M56 51 L56 61" stroke="#c9962b" stroke-width="3" stroke-linecap="round"/></svg>
+    <h3>キャップ</h3>
+    <p>チームや店舗のロゴ入りなど、<br>オリジナルキャップを制作します。</p>
+   </div>
+   <div class="card">
+    <svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="56" fill="#f1ebdd"/><path d="M42 42 C42 20 78 20 78 42" fill="none" stroke="#14403a" stroke-width="5"/><rect x="26" y="40" width="68" height="60" rx="6" fill="#1f5d50"/><path d="M38 78 C46 66 54 90 62 78 C70 66 78 90 84 78" fill="none" stroke="#faf7f2" stroke-width="3.5" stroke-linecap="round"/><circle cx="60" cy="58" r="8" fill="#c9962b"/></svg>
+    <h3>バッグ</h3>
+    <p>トートバッグなど、<br>オリジナルデザインのバッグを制作します。</p>
+   </div>
+  </div>
+  <p style="margin-top:22px;font-size:14px;color:var(--sub)">上記以外のアイテムへのプリントについても、まずはご相談ください。</p>
+ </div>
+</section>
+
+<section id="about-print">
+ <div class="wrap">
+  <span class="eyebrow">ABOUT HEAT TRANSFER</span>
+  <h2>アイロンプリント（熱転写）とは</h2>
+  <p class="lead">デザインを転写シートにプリントし、熱と圧力で生地に定着させる加工方法です。</p>
+  <div class="process">
+   <div class="pstep">
+    <svg viewBox="0 0 96 80" aria-hidden="true"><rect x="16" y="8" width="64" height="64" rx="4" fill="#f1ebdd" stroke="#c9962b" stroke-width="2"/><path d="M48 24 L54 38 L69 39 L58 48 L62 63 L48 55 L34 63 L38 48 L27 39 L42 38Z" fill="#1f5d50"/></svg>
+    <b>① デザインを転写シートへ</b>
+    <span>お客様のデザインを、転写用のシートにプリントします。</span>
+   </div>
+   <div class="parrow">▶</div>
+   <div class="pstep">
+    <svg viewBox="0 0 96 80" aria-hidden="true"><rect x="22" y="6" width="52" height="16" rx="3" fill="#1f5d50"/><rect x="42" y="20" width="12" height="14" fill="#14403a"/><rect x="14" y="34" width="68" height="8" rx="2" fill="#c9962b"/><rect x="10" y="44" width="76" height="26" rx="3" fill="#d9d1c0"/><path d="M30 56 H66" stroke="#faf7f2" stroke-width="3" stroke-linecap="round"/></svg>
+    <b>② 熱と圧力を加える</b>
+    <span>製品の上に転写シートを重ね、熱と圧力をかけます。</span>
+   </div>
+   <div class="parrow">▶</div>
+   <div class="pstep">
+    <svg viewBox="0 0 96 80" aria-hidden="true"><path d="M34 8 L16 18 L8 34 L22 42 L30 32 L30 72 L66 72 L66 32 L74 42 L88 34 L80 18 L62 8 C56 16 40 16 34 8Z" fill="#1f5d50"/><circle cx="48" cy="44" r="10" fill="#faf7f2"/><path d="M48 37 L50 42 L56 43 L52 47 L53 53 L48 50 L43 53 L44 47 L40 43 L46 42Z" fill="#c9962b"/></svg>
+    <b>③ 生地に定着して完成</b>
+    <span>シートを剥がすと、デザインが生地に仕上がります。</span>
+   </div>
+  </div>
+  <div class="feat" style="margin-top:46px">
+   <div>
+    <h3>デザインの自由度</h3>
+    <p>写真風の絵柄、ロゴ、文字など、お客様のデザインに合わせて制作できます。</p>
+   </div>
+   <div>
+    <h3>さまざまなアイテムに</h3>
+    <p>Tシャツのほか、キャップやバッグなど、さまざまな製品へのプリントに利用されています。</p>
+   </div>
+   <div>
+    <h3>オリジナルグッズに</h3>
+    <p>ユニフォーム、イベントの記念品、ブランドグッズなど、少部数のオリジナル制作にも向いた方法です。</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="guide" class="alt">
+ <div class="wrap">
+  <span class="eyebrow">ORDER GUIDE</span>
+  <h2>ご注文について</h2>
+  <p class="lead">ご注文前に気になるポイントをまとめました。</p>
+  <div class="feat">
+   <div>
+    <h3>1点からOK</h3>
+    <p>最少1点から制作を承ります。個人のお客様のご注文も歓迎しています。</p>
+   </div>
+   <div>
+    <h3>発送の目安：1〜3営業日</h3>
+    <p>ご注文内容の確定後、1〜3営業日での発送を目安としています。</p>
+   </div>
+   <div>
+    <h3>お見積り</h3>
+    <p>料金はご注文の数量などに応じてご案内します。まずはお気軽にご相談ください。</p>
+   </div>
+   <div>
+    <h3>素材・カラーのご相談</h3>
+    <p>素材やカラーのご希望にも対応しています。素材・カラーによっては、納期が通常より延びる場合があります。</p>
+   </div>
+   <div>
+    <h3>どなたでもご注文可能</h3>
+    <p>個人・法人・団体を問わず、また、ネットショップ運営の個人セラー様からのご注文もお受けしています。</p>
+   </div>
+   <div>
+    <h3>郵送／工場での受け取り</h3>
+    <p>完成品は郵送でお届けします。工場でのお受け取りも可能です。受け取りをご希望の場合は、事前にメールでご連絡ください。</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="flow">
+ <div class="wrap">
+  <span class="eyebrow">FLOW</span>
+  <h2>ご依頼の流れ</h2>
+  <p class="lead">ご相談から納品までの、基本的な流れです。</p>
+  <div class="steps">
+   <div class="step"><span class="num">STEP 01</span><b>ご相談</b><p>メールで、作りたいアイテムやデザインについてお知らせください。</p></div>
+   <div class="step"><span class="num">STEP 02</span><b>内容の確認</b><p>デザインやアイテム、数量などの内容を確認します。</p></div>
+   <div class="step"><span class="num">STEP 03</span><b>お見積り</b><p>数量などの内容に応じて、お見積りをご案内します。</p></div>
+   <div class="step"><span class="num">STEP 04</span><b>制作</b><p>ご確認いただいた内容で、プリント加工を行います。</p></div>
+   <div class="step"><span class="num">STEP 05</span><b>発送・お渡し</b><p>1〜3営業日を目安に発送します。工場での受け取りも可能です。</p></div>
+  </div>
+  <div class="prep">
+   <h3>ご相談の際にお知らせいただきたいこと</h3>
+   <ul>
+    <li>作りたいアイテム（Tシャツ・キャップ・バッグなど）</li>
+    <li>プリントしたいデザイン（データや画像、イメージ）</li>
+    <li>ご希望の数量</li>
+    <li>ご希望の納期</li>
+    <li>ご利用の目的（ユニフォーム、記念品など）</li>
+    <li>お名前・ご連絡先</li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<section id="company" class="alt">
+ <div class="wrap">
+  <span class="eyebrow">COMPANY</span>
+  <h2>会社概要</h2>
+  <table style="margin-top:26px">
+   <tr><th>会社名</th><td>株式会社鑫華（カブシキガイシャシンカ）</td></tr>
+   <tr><th>設立</th><td>2022年6月</td></tr>
+   <tr><th>代表者</th><td>陳 鑫（チン シン）</td></tr>
+   <tr><th>所在地</th><td>大阪府泉南市兎田427-1</td></tr>
+   <tr><th>事業内容</th><td>アイロンプリント（熱転写）によるオリジナル製品の制作<br>（Tシャツ・キャップ・バッグ など）</td></tr>
+   <tr><th>営業時間</th><td>10:00 〜 18:00</td></tr>
+   <tr><th>メール</th><td><a href="mailto:info@shinkajapan.com">info@shinkajapan.com</a></td></tr>
+  </table>
+  <div class="access">
+   <div><small>ACCESS</small><span>大阪府泉南市兎田427-1</span></div>
+   <a class="ghost" href="https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E9%98%AA%E5%BA%9C%E6%B3%89%E5%8D%97%E5%B8%82%E5%85%8E%E7%94%B0427-1" target="_blank" rel="noopener">地図を見る（Googleマップ）</a>
+  </div>
+ </div>
+</section>
+
+<section id="contact" class="contact">
+ <div class="wrap">
+  <span class="eyebrow">CONTACT</span>
+  <h2 style="display:inline-block">お問い合わせ</h2>
+  <p>制作のご相談・お見積りは、メールにてお気軽にご連絡ください。</p>
+  <a class="mail" href="mailto:info@shinkajapan.com">info@shinkajapan.com</a>
+  <p style="font-size:14px">営業時間：10:00 〜 18:00</p>
+ </div>
+</section>
+</main>
+
+<footer>© 2026 株式会社鑫華 All rights reserved.</footer>
+</body>
+</html>
