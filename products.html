@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>商品ラインナップ | 株式会社鑫華</title>
+<meta name="description" content="株式会社鑫華のアイロンプリント（熱転写）に対応しているアイテムの一覧です。Tシャツ、トートバッグ、ランチバッグ、ポーチなど。">
+<style>
+:root{--ink:#26302d;--sub:#66706c;--paper:#faf7f2;--cream:#f1ebdd;--card:#fff;--green:#1f5d50;--green-d:#14403a;--gold:#c9962b;--line:#e4ddcd}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;color:var(--ink);background:var(--paper);line-height:1.9}
+.tag,nav,.btn,.eyebrow,.chip,.ask,.size,footer,.crumb,.th{font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",Meiryo,sans-serif}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+header{position:sticky;top:0;z-index:10;background:rgba(250,247,242,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(4px)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:66px}
+.logo{text-decoration:none;font-weight:700;font-size:19px;color:var(--green);letter-spacing:.1em;display:flex;align-items:center;gap:10px}
+.logo i{display:inline-block;width:10px;height:10px;background:var(--gold);transform:rotate(45deg)}
+nav a{margin-left:22px;font-size:13px;text-decoration:none;color:var(--sub);transition:color .2s}
+nav a:hover,nav a.cur{color:var(--green)}
+nav a.cta{color:#fff;background:var(--green);padding:7px 16px;border-radius:3px}
+nav a.cta:hover{background:var(--green-d);color:#fff}
+.pagehead{padding:58px 0 40px;border-bottom:1px solid var(--line);background:radial-gradient(circle at 90% 0,#efe6d2 0,rgba(239,230,210,0) 50%),var(--paper)}
+.crumb{font-size:12px;color:var(--sub);margin-bottom:14px}
+.crumb a{text-decoration:none;color:var(--green)}
+.eyebrow{display:block;font-size:12px;letter-spacing:.24em;color:var(--gold)}
+h1{font-size:34px;color:var(--green-d);margin:6px 0 10px}
+.pagehead p{color:var(--sub);max-width:42em}
+.jump{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+.jump a{font-family:"Hiragino Sans","Noto Sans JP",sans-serif;font-size:13px;text-decoration:none;border:1px solid var(--green);color:var(--green);padding:6px 18px;border-radius:30px}
+.jump a:hover{background:var(--green);color:#fff}
+section{padding:64px 0}
+section.alt{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+h2{font-size:26px;color:var(--green-d);margin:4px 0 26px;position:relative;padding-bottom:14px}
+h2::after{content:"";position:absolute;left:0;bottom:0;width:44px;height:2px;background:var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.pcard{background:var(--card);border:1px solid var(--line);display:flex;flex-direction:column;transition:box-shadow .25s,transform .25s}
+.pcard:hover{box-shadow:0 14px 28px rgba(20,64,58,.1);transform:translateY(-3px)}
+.pimg{background:#fff;aspect-ratio:1/1;overflow:hidden;border-bottom:1px solid var(--line)}
+.pimg img{width:100%;height:100%;object-fit:contain;display:block}
+.thumbs{display:flex;gap:8px;padding:10px 14px 0}
+.th{border:1px solid var(--line);background:#fff;padding:0;width:56px;height:56px;cursor:pointer;opacity:.7}
+.th img{width:100%;height:100%;object-fit:contain;display:block}
+.th.on{border-color:var(--green);opacity:1}
+.pbody{padding:16px 18px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.pbody h3{font-size:17px;color:var(--green-d);line-height:1.5}
+.chip{display:inline-block;margin-left:8px;font-size:11px;background:var(--cream);color:var(--green);padding:1px 10px;border-radius:20px;vertical-align:2px}
+.size{font-size:13px;color:var(--sub);line-height:1.6}
+.size span{display:inline-block;margin-right:8px;font-size:11px;color:var(--gold);letter-spacing:.1em}
+.ask{margin-top:auto;align-self:flex-start;font-size:13px;text-decoration:none;color:var(--green);border-bottom:1px solid var(--green);padding-bottom:1px}
+.ask:hover{color:var(--gold);border-color:var(--gold)}
+.note{margin-top:30px;font-size:13px;color:var(--sub);font-family:"Hiragino Sans","Noto Sans JP",sans-serif;line-height:1.8}
+.contact{background:var(--green-d);color:#fff;text-align:center;position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.07) 1.2px,transparent 1.3px);background-size:26px 26px}
+.contact .wrap{position:relative}
+.contact h2{color:#fff;display:inline-block}
+.contact h2::after{left:50%;margin-left:-22px}
+.contact .eyebrow{color:#e5c06a}
+.contact p{opacity:.92}
+.contact .mail{display:inline-block;margin:16px 0 8px;font-size:24px;color:#fff;text-decoration:none;border-bottom:2px solid var(--gold);font-family:"Hiragino Sans","Noto Sans JP",sans-serif;word-break:break-all}
+.contact .back{display:block;margin-top:22px;font-size:13px;color:#e5c06a;font-family:"Hiragino Sans",sans-serif}
+footer{background:#0e2b26;color:#b9c9c4;text-align:center;font-size:12px;padding:24px 0}
+@media(max-width:900px){.grid{grid-template-columns:1fr 1fr}}
+@media(max-width:720px){
+ nav a{display:none}
+ nav a.cta{display:inline-block;margin-left:0;font-size:13px}
+ h1{font-size:27px}
+ section{padding:48px 0}
+ .pagehead{padding:40px 0 30px}
+ .contact .mail{font-size:19px}
+}
+@media(max-width:520px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap">
+  <a class="logo" href="index.html"><i></i>株式会社鑫華</a>
+  <nav><a href="index.html">トップ</a><a class="cur" href="products.html">商品一覧</a><a href="index.html#guide">ご注文について</a><a href="index.html#company">会社概要</a><a class="cta" href="index.html#contact">お問い合わせ</a></nav>
+ </div>
+</header>
+
+<main>
+<div class="pagehead">
+ <div class="wrap">
+  <div class="crumb"><a href="index.html">トップ</a> ／ 商品ラインナップ</div>
+  <span class="eyebrow">LINEUP</span>
+  <h1>商品ラインナップ</h1>
+  <p>アイロンプリント（熱転写）に対応しているアイテムの一例です。掲載の写真は無地のアイテムで、お客様のデザインをプリントして制作します。掲載以外のアイテムも、お気軽にご相談ください。</p>
+  <div class="jump"><a href="#tshirt">Tシャツ</a><a href="#bag">バッグ・ポーチ</a></div>
+ </div>
+</div>
+
+<section id="tshirt">
+ <div class="wrap">
+  <span class="eyebrow">T-SHIRT</span>
+  <h2>Tシャツ</h2>
+  <div class="grid">
+<article class="pcard" id="tshirt-white">
+ <div class="pimg"><img src="images/products/tshirt-white-1.jpg" alt="Tシャツ（ホワイト）" loading="lazy" width="900" height="900"></div>
+ <div class="thumbs"><button type="button" class="th on" data-src="images/products/tshirt-white-1.jpg" aria-label="Tシャツ（ホワイト） 画像1"><img src="images/products/tshirt-white-1.jpg" alt="" loading="lazy" width="64" height="64"></button><button type="button" class="th" data-src="images/products/tshirt-white-2.jpg" aria-label="Tシャツ（ホワイト） 画像2"><img src="images/products/tshirt-white-2.jpg" alt="" loading="lazy" width="64" height="64"></button></div>
+ <div class="pbody">
+  <h3>Tシャツ<span class="chip">ホワイト</span></h3>
+  
+  <a class="ask" href="mailto:info@shinkajapan.com?subject=%E5%95%86%E5%93%81%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%EF%BC%9AT%E3%82%B7%E3%83%A3%E3%83%84%EF%BC%88%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%EF%BC%89&body=%E5%95%86%E5%93%81%E5%90%8D%EF%BC%9AT%E3%82%B7%E3%83%A3%E3%83%84%EF%BC%88%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%EF%BC%89%0A%E3%81%94%E5%B8%8C%E6%9C%9B%E3%81%AE%E6%95%B0%E9%87%8F%EF%BC%9A%0A%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%81%AE%E6%9C%89%E7%84%A1%EF%BC%9A%0A%E3%81%94%E5%B8%8C%E6%9C%9B%E3%81%AE%E7%B4%8D%E6%9C%9F%EF%BC%9A%0A%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%9A%0A">この商品について問い合わせる</a>
+ </div>
+</article>
+<article class="pcard" id="tshirt-black">
+ <div class="pimg"><img src="images/products/tshirt-black-1.jpg" alt="Tシャツ（ブラック）" loading="lazy" width="900" height="900"></div>
+ <div class="thumbs"><button type="button" class="th on" data-src="images/products/tshirt-black-1.jpg" aria-label="Tシャツ（ブラック） 画像1"><img src="images/products/tshirt-black-1.jpg" alt="" loading="lazy" width="64" height="64"></button><button type="button" class="th" data-src="images/products/tshirt-black-2.jpg" aria-label="Tシャツ（ブラック） 画像2"><img src="images/products/tshirt-black-2.jpg" alt="" loading="lazy" width="64" height="64"></button></div>
+ <div class="pbody">
+  <h3>Tシャツ<span class="chip">ブラック</span></h3>
+  
+  <a class="ask" href="mailto:info@shinkajapan.com?subject=%E5%95%86%E5%93%81%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%EF%BC%9AT%E3%82%B7%E3%83%A3%E3%83%84%EF%BC%88%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%EF%BC%89&body=%E5%95%86%E5%93%81%E5%90%8D%EF%BC%9AT%E3%82%B7%E3%83%A3%E3%83%84%EF%BC%88%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%EF%BC%89%0A%E3%81%94%E5%B8%8C%E6%9C%9B%E3%81%AE%E6%95%B0%E9%87%8F%EF%BC%9A%0A%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%81%AE%E6%9C%89%E7%84%A1%EF%BC%9A%0A%E3%81%94%E5%B8%8C%E6%9C%9B%E3%81%AE%E7%B4%8D%E6%9C%9F%EF%BC%9A%0A%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%9A%0A">この商品について問い合わせる</a>
+ </div>
+</article>
+  </div>
+ </div>
+</section>
+
+<section id="bag" class="alt">
+ <div class="wrap">
+  <span class="eyebrow">BAG &amp; POUCH</span>
+  <h2>バッグ・ポーチ</h2>
+  <div class="grid">
+<article class="pcard" id="pouch">
+ <div class="pimg"><img src="images/products/pouch-1.jpg" alt="ポーチ（ジッパー付き）" loading="lazy" width="900" height="900"></div>
+ 
+ <div class="pbody">
+  <h3>ポーチ（ジッパー付き）</h3>
+  <p class="size"><span>サイズ</span>横22cm × 縦16cm</p>
+  <a class="ask" href="mailto:info@shinkajapan.com?subject=%E5%95%86%E5%93%81%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%EF%BC%9A%E3%83%9D%E3%83%BC%E3%83%81%EF%BC%88%E3%82%B8%E3%83%83%E3%83%91%E3%83%BC%E4%BB%98%E3%81%8D%EF%BC%89&body=%E5%95%86%E5%93%81%E5%90%8D%EF%BC%9A%E3%83%9D%E3%83%BC%E3%83%81%EF%BC%88%E3%82%B8%E3%83%83%E3%83%91%E3%83%BC%E4%BB%98%E3%81%8D%EF%BC%89%0A%E3%81%94%E5%B8%8C%E6%9C%9B%E3%81%AE%E6%95%B0%E9%87%8F%EF%BC%9A%0A%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%81%AE%E6%9C%89%E7%84%A1%EF%BC%9A%0A%E3%81%94%E5%B8%8C%E6%9C%9B%E3%81%AE%E7%B4%8D%E6%9C%9F%EF%BC%9A%0A%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%9A%0A">この商品について問い合わせる</a>
+ </div>
+</article>
+<article class="pcard" id="shoulder-white">
+ <div class="pimg"><img src="images/products/shoulder-white-1.jpg" alt="キャンバス ショルダーバッグ（ホワイト）" loading="lazy" width="900" height="900"></div>
+ 
+ <div class="pbody">
+  <h3>キャンバス ショルダーバッグ<span class="chip">ホワイト</span></h3>
+  <p class="size"><span>サイズ</span>横35cm × 縦33cm</p>
+  <a class="ask" href="mailto:info@shinkajapan.com?subject=%E5%95%86%E5%93%81%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%EF%BC%9A%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%90%E3%82%B9%20%E3%82%B7%E3%83%A7%E3%83%AB%E3%83%80%E3%83%BC%E3%83%90%E3%83%83%E3%82%B0%EF%BC%88%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%EF%BC%89&body=%E5%95%86%E5%93%81%E5%90%8D%EF%BC%9A%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%90%E3%82%B9%20%E3%82%B7%E3%83%A7%E3%83%AB%E3%83%80%E3%83%BC%E3%83%90%E3%83%83%E3%82%B0%EF%BC%88%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%EF%BC%89%0A%E3%81%94%E5%B8%8C%E6%9C%9B%E3%81%AE%E6%95%B0%E9%87%8F%EF%BC%9A%0A%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%81%AE%E6%9C%89%E7%84%A1%EF%BC%9A%0A%E3%81%94%E5%B8%8C%E6%9C%9B%E3%81%AE%E7%B4%8D%E6%9C%9F%EF%BC%9A%0A%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%9A%0A">この商品について問い合わせる</a>
+ </div>
+</article>
+<article class="pcard" id="multipocket">
+ <div class="pimg"><img src="images/products/multipocket-1.jpg" alt="マルチポケットバッグ" loading="lazy" width="900" height="900"></div>
+ 
+ <div class="pbody">
+  <h3>マルチポケットバッグ</h3>
+  <p class="size"><span>サイズ</span>横30cm × 縦28cm × マチ11cm</p>
+  <a class="ask" href="mailto:info@shinkajapan.com?subject=%E5%95%86%E5%93%81%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%EF%BC%9A%E3%83%9E%E3%83%AB%E3%83%81%E3%83%9D%E3%82%B1%E3%83%83%E3%83%88%E3%83%90%E3%83%83%E3%82%B0&body=%E5%95%86%E5%93%81%E5%90%8D%EF%BC%9A%E3%83%9E%E3%83%AB%E3%83%81%E3%83%9D%E3%82%B1%E3%83%83%E3%83%88%E3%83%90%E3%83%83%E3%82%B0%0A%E3%81%94%E5%B8%8C%E6%9C%9B%E3%81%AE%E6%95%B0%E9%87%8F%EF%BC%9A%0A%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%81%AE%E6%9C%89%E7%84%A1%EF%BC%9A%0A%E3%81%94%E5%B8%8C%E6%9C%9B%E3%81%AE%E7%B4%8D%E6%9C%9F%EF%BC%9A%0A%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%9A%0A">この商品について問い合わせる</a>
+ </div>
+</article>
+<article class="pcard" id="tote-white">
+ <div class="pimg"><img src="images/products/tote-white-1.jpg" alt="キャンバス トートバッグ（ホワイト）" loading="lazy" width="900" height="900"></div>
+ <div class="thumbs"><button type="button" class="th on" data-src="images/products/tote-white-1.jpg" aria-label="キャンバス トートバッグ（ホワイト） 画像1"><img src="images/products/tote-white-1.jpg" alt="" loading="lazy" width="64" height="64"></button><button type="button" class="th" data-src="images/products/tote-white-2.jpg" aria-label="キャンバス トートバッグ（ホワイト） 画像2"><img src="images/products/tote-white-2.jpg" alt="" loading="lazy" width="64" height="64"></button></div>
+ <div class="pbody">
+  <h3>キャンバス トートバッグ<span class="chip">ホワイト</span></h3>
+  <p class="size"><span>サイズ</span>横32.5cm × 縦40cm</p>
+  <a class="ask" href="mailto:info@shinkajapan.com?subject=%E5%95%86%E5%93%81%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%EF%BC%9A%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%90%E3%82%B9%20%E3%83%88%E3%83%BC%E3%83%88%E3%83%90%E3%83%83%E3%82%B0%EF%BC%88%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%EF%BC%89&body=%E5%95%86%E5%93%81%E5%90%8D%EF%BC%9A%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%90%E3%82%B9%20%E3%83%88%E3%83%BC%E3%83%88%E3%83%90%E3%83%83%E3%82%B0%EF%BC%88%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%EF%BC%89%0A%E3%81%94%E5%B8%8C%E6%9C%9B%E3%81%AE%E6%95%B0%E9%87%8F%EF%BC%9A%0A%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%81%AE%E6%9C%89%E7%84%A1%EF%BC%9A%0A%E3%81%94%E5%B8%8C%E6%9C%9B%E3%81%AE%E7%B4%8D%E6%9C%9F%EF%BC%9A%0A%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%9A%0A">この商品について問い合わせる</a>
+ </div>
+</article>
+<article class="pcard" id="tote-black">
+ <div class="pimg"><img src="images/products/tote-black-1.jpg" alt="キャンバス トートバッグ（ブラック）" loading="lazy" width="900" height="900"></div>
+ <div class="thumbs"><button type="button" class="th on" data-src="images/products/tote-black-1.jpg" aria-label="キャンバス トートバッグ（ブラック） 画像1"><img src="images/products/tote-black-1.jpg" alt="" loading="lazy" width="64" height="64"></button><button type="button" class="th" data-src="images/products/tote-black-2.jpg" aria-label="キャンバス トートバッグ（ブラック） 画像2"><img src="images/products/tote-black-2.jpg" alt="" loading="lazy" width="64" height="64"></button></div>
+ <div class="pbody">
+  <h3>キャンバス トートバッグ<span class="chip">ブラック</span></h3>
+  
+  <a class="ask" href="mailto:info@shinkajapan.com?subject=%E5%95%86%E5%93%81%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%EF%BC%9A%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%90%E3%82%B9%20%E3%83%88%E3%83%BC%E3%83%88%E3%83%90%E3%83%83%E3%82%B0%EF%BC%88%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%EF%BC%89&body=%E5%95%86%E5%93%81%E5%90%8D%EF%BC%9A%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%90%E3%82%B9%20%E3%83%88%E3%83%BC%E3%83%88%E3%83%90%E3%83%83%E3%82%B0%EF%BC%88%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%EF%BC%89%0A%E3%81%94%E5%B8%8C%E6%9C%9B%E3%81%AE%E6%95%B0%E9%87%8F%EF%BC%9A%0A%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%81%AE%E6%9C%89%E7%84%A1%EF%BC%9A%0A%E3%81%94%E5%B8%8C%E6%9C%9B%E3%81%AE%E7%B4%8D%E6%9C%9F%EF%BC%9A%0A%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%9A%0A">この商品について問い合わせる</a>
+ </div>
+</article>
+<article class="pcard" id="gift-tote">
+ <div class="pimg"><img src="images/products/gift-tote-1.jpg" alt="キャンバス ギフトトート（配色・リボン付き）" loading="lazy" width="900" height="900"></div>
+ <div class="thumbs"><button type="button" class="th on" data-src="images/products/gift-tote-1.jpg" aria-label="キャンバス ギフトトート（配色・リボン付き） 画像1"><img src="images/products/gift-tote-1.jpg" alt="" loading="lazy" width="64" height="64"></button><button type="button" class="th" data-src="images/products/gift-tote-2.jpg" aria-label="キャンバス ギフトトート（配色・リボン付き） 画像2"><img src="images/products/gift-tote-2.jpg" alt="" loading="lazy" width="64" height="64"></button></div>
+ <div class="pbody">
+  <h3>キャンバス ギフトトート（配色・リボン付き）</h3>
+  <p class="size"><span>サイズ</span>横40cm × 縦32cm × マチ17.5cm</p>
+  <a class="ask" href="mailto:info@shinkajapan.com?subject=%E5%95%86%E5%93%81%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%EF%BC%9A%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%90%E3%82%B9%20%E3%82%AE%E3%83%95%E3%83%88%E3%83%88%E3%83%BC%E3%83%88%EF%BC%88%E9%85%8D%E8%89%B2%E3%83%BB%E3%83%AA%E3%83%9C%E3%83%B3%E4%BB%98%E3%81%8D%EF%BC%89&body=%E5%95%86%E5%93%81%E5%90%8D%EF%BC%9A%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%90%E3%82%B9%20%E3%82%AE%E3%83%95%E3%83%88%E3%83%88%E3%83%BC%E3%83%88%EF%BC%88%E9%85%8D%E8%89%B2%E3%83%BB%E3%83%AA%E3%83%9C%E3%83%B3%E4%BB%98%E3%81%8D%EF%BC%89%0A%E3%81%94%E5%B8%8C%E6%9C%9B%E3%81%AE%E6%95%B0%E9%87%8F%EF%BC%9A%0A%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%81%AE%E6%9C%89%E7%84%A1%EF%BC%9A%0A%E3%81%94%E5%B8%8C%E6%9C%9B%E3%81%AE%E7%B4%8D%E6%9C%9F%EF%BC%9A%0A%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%9A%0A">この商品について問い合わせる</a>
+ </div>
+</article>
+<article class="pcard" id="lunch-white">
+ <div class="pimg"><img src="images/products/lunch-white-1.jpg" alt="ランチバッグ（ホワイト）" loading="lazy" width="900" height="900"></div>
+ <div class="thumbs"><button type="button" class="th on" data-src="images/products/lunch-white-1.jpg" aria-label="ランチバッグ（ホワイト） 画像1"><img src="images/products/lunch-white-1.jpg" alt="" loading="lazy" width="64" height="64"></button><button type="button" class="th" data-src="images/products/lunch-white-2.jpg" aria-label="ランチバッグ（ホワイト） 画像2"><img src="images/products/lunch-white-2.jpg" alt="" loading="lazy" width="64" height="64"></button></div>
+ <div class="pbody">
+  <h3>ランチバッグ<span class="chip">ホワイト</span></h3>
+  <p class="size"><span>サイズ</span>横26cm × 縦18cm × マチ14cm</p>
+  <a class="ask" href="mailto:info@shinkajapan.com?subject=%E5%95%86%E5%93%81%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%EF%BC%9A%E3%83%A9%E3%83%B3%E3%83%81%E3%83%90%E3%83%83%E3%82%B0%EF%BC%88%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%EF%BC%89&body=%E5%95%86%E5%93%81%E5%90%8D%EF%BC%9A%E3%83%A9%E3%83%B3%E3%83%81%E3%83%90%E3%83%83%E3%82%B0%EF%BC%88%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%EF%BC%89%0A%E3%81%94%E5%B8%8C%E6%9C%9B%E3%81%AE%E6%95%B0%E9%87%8F%EF%BC%9A%0A%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%81%AE%E6%9C%89%E7%84%A1%EF%BC%9A%0A%E3%81%94%E5%B8%8C%E6%9C%9B%E3%81%AE%E7%B4%8D%E6%9C%9F%EF%BC%9A%0A%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%9A%0A">この商品について問い合わせる</a>
+ </div>
+</article>
+<article class="pcard" id="lunch-black">
+ <div class="pimg"><img src="images/products/lunch-black-1.jpg" alt="ランチバッグ（ブラック）" loading="lazy" width="900" height="900"></div>
+ <div class="thumbs"><button type="button" class="th on" data-src="images/products/lunch-black-1.jpg" aria-label="ランチバッグ（ブラック） 画像1"><img src="images/products/lunch-black-1.jpg" alt="" loading="lazy" width="64" height="64"></button><button type="button" class="th" data-src="images/products/lunch-black-2.jpg" aria-label="ランチバッグ（ブラック） 画像2"><img src="images/products/lunch-black-2.jpg" alt="" loading="lazy" width="64" height="64"></button></div>
+ <div class="pbody">
+  <h3>ランチバッグ<span class="chip">ブラック</span></h3>
+  <p class="size"><span>サイズ</span>横26cm × 縦18cm × マチ14cm</p>
+  <a class="ask" href="mailto:info@shinkajapan.com?subject=%E5%95%86%E5%93%81%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%EF%BC%9A%E3%83%A9%E3%83%B3%E3%83%81%E3%83%90%E3%83%83%E3%82%B0%EF%BC%88%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%EF%BC%89&body=%E5%95%86%E5%93%81%E5%90%8D%EF%BC%9A%E3%83%A9%E3%83%B3%E3%83%81%E3%83%90%E3%83%83%E3%82%B0%EF%BC%88%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%EF%BC%89%0A%E3%81%94%E5%B8%8C%E6%9C%9B%E3%81%AE%E6%95%B0%E9%87%8F%EF%BC%9A%0A%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%81%AE%E6%9C%89%E7%84%A1%EF%BC%9A%0A%E3%81%94%E5%B8%8C%E6%9C%9B%E3%81%AE%E7%B4%8D%E6%9C%9F%EF%BC%9A%0A%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%9A%0A">この商品について問い合わせる</a>
+ </div>
+</article>
+<article class="pcard" id="drawstring">
+ <div class="pimg"><img src="images/products/drawstring-1.jpg" alt="ナップサック（巾着タイプ）（ブラック）" loading="lazy" width="900" height="900"></div>
+ 
+ <div class="pbody">
+  <h3>ナップサック（巾着タイプ）<span class="chip">ブラック</span></h3>
+  <p class="size"><span>サイズ</span>横36cm × 縦43cm</p>
+  <a class="ask" href="mailto:info@shinkajapan.com?subject=%E5%95%86%E5%93%81%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%EF%BC%9A%E3%83%8A%E3%83%83%E3%83%97%E3%82%B5%E3%83%83%E3%82%AF%EF%BC%88%E5%B7%BE%E7%9D%80%E3%82%BF%E3%82%A4%E3%83%97%EF%BC%89%EF%BC%88%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%EF%BC%89&body=%E5%95%86%E5%93%81%E5%90%8D%EF%BC%9A%E3%83%8A%E3%83%83%E3%83%97%E3%82%B5%E3%83%83%E3%82%AF%EF%BC%88%E5%B7%BE%E7%9D%80%E3%82%BF%E3%82%A4%E3%83%97%EF%BC%89%EF%BC%88%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%EF%BC%89%0A%E3%81%94%E5%B8%8C%E6%9C%9B%E3%81%AE%E6%95%B0%E9%87%8F%EF%BC%9A%0A%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%81%AE%E6%9C%89%E7%84%A1%EF%BC%9A%0A%E3%81%94%E5%B8%8C%E6%9C%9B%E3%81%AE%E7%B4%8D%E6%9C%9F%EF%BC%9A%0A%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%9A%0A">この商品について問い合わせる</a>
+ </div>
+</article>
+<article class="pcard" id="box-tote-white">
+ <div class="pimg"><img src="images/products/box-tote-white-1.jpg" alt="マチ付きキャンバストート（ホワイト）" loading="lazy" width="900" height="900"></div>
+ <div class="thumbs"><button type="button" class="th on" data-src="images/products/box-tote-white-1.jpg" aria-label="マチ付きキャンバストート（ホワイト） 画像1"><img src="images/products/box-tote-white-1.jpg" alt="" loading="lazy" width="64" height="64"></button><button type="button" class="th" data-src="images/products/box-tote-white-2.jpg" aria-label="マチ付きキャンバストート（ホワイト） 画像2"><img src="images/products/box-tote-white-2.jpg" alt="" loading="lazy" width="64" height="64"></button></div>
+ <div class="pbody">
+  <h3>マチ付きキャンバストート<span class="chip">ホワイト</span></h3>
+  <p class="size"><span>サイズ</span>横38cm × 縦32cm × マチ13cm</p>
+  <a class="ask" href="mailto:info@shinkajapan.com?subject=%E5%95%86%E5%93%81%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%EF%BC%9A%E3%83%9E%E3%83%81%E4%BB%98%E3%81%8D%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%90%E3%82%B9%E3%83%88%E3%83%BC%E3%83%88%EF%BC%88%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%EF%BC%89&body=%E5%95%86%E5%93%81%E5%90%8D%EF%BC%9A%E3%83%9E%E3%83%81%E4%BB%98%E3%81%8D%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%90%E3%82%B9%E3%83%88%E3%83%BC%E3%83%88%EF%BC%88%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%EF%BC%89%0A%E3%81%94%E5%B8%8C%E6%9C%9B%E3%81%AE%E6%95%B0%E9%87%8F%EF%BC%9A%0A%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%81%AE%E6%9C%89%E7%84%A1%EF%BC%9A%0A%E3%81%94%E5%B8%8C%E6%9C%9B%E3%81%AE%E7%B4%8D%E6%9C%9F%EF%BC%9A%0A%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%9A%0A">この商品について問い合わせる</a>
+ </div>
+</article>
+  </div>
+  <p class="note">※ サイズには1〜3cm程度の誤差がある場合があります。<br>※ 在庫・カラー・サイズについては、メールにてお問い合わせください。</p>
+ </div>
+</section>
+
+<section class="contact">
+ <div class="wrap">
+  <span class="eyebrow">CONTACT</span>
+  <h2>ご相談・お見積り</h2>
+  <p>気になるアイテムがありましたら、メールにてお気軽にご連絡ください。</p>
+  <a class="mail" href="mailto:info@shinkajapan.com">info@shinkajapan.com</a>
+  <p style="font-size:14px">営業時間：10:00 〜 18:00</p>
+  <a class="back" href="index.html">← トップページへ戻る</a>
+ </div>
+</section>
+</main>
+
+<footer>© 2026 株式会社鑫華 All rights reserved.</footer>
+<script>
+document.querySelectorAll('.pcard').forEach(function(c){
+  var main=c.querySelector('.pimg img');
+  c.querySelectorAll('.th').forEach(function(b){
+    b.addEventListener('click',function(){
+      main.src=b.getAttribute('data-src');
+      c.querySelectorAll('.th').forEach(function(x){x.classList.remove('on')});
+      b.classList.add('on');
+    });
+  });
+});
+</script>
+</body>
+</html>
